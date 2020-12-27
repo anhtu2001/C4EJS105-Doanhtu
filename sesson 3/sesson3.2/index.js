@@ -41,58 +41,55 @@
 //  let a = s.split(" ");
 //  console.log(a);
 // 3
-// const a = [4, 5, 7, -8];
-//  console.log(...a);
+//  const a = [4, 5, 7, -8];
+//   console.log(...a);
 
 // 4
 
-//  let i = prompt('Hi there, welcome to shop admin panel, what do you want (C,R,U,D)?');
-//  let c = ['The current items ares:', 'jeans', 'T-Shirt', 'Socks'];
-//     if (i == 'e') {
-//     alert('This commend is not supported');
+   
+let a = ['jeans', 'T-shirt', 'socks'];
+let i;
+while(true) {
+     i = prompt('nhap vao ');
+     i = i.toUpperCase();
+    if(i == 'R') {
+        console.log('The current items are:');
+    for(let i = 0; i < a.length; i++) {
+        console.log(`${i}: ${a[i]}`);
+        alert('Done');
+    } 
+    } else if (i == 'C' ){
+        h = prompt('Enter the name of the new item');
+        a.push(h);
+         console.log(a);
+         alert('Done');
+    } else if (i == 'U') {
+        let s = prompt('enter the new name');
+        let g = prompt('enter ');
+        a[s] = g;
+        console.log(a);
+        alert('Done');
 
-//     } else if (i == 'r') {
-//       for(let a = 0; a < c.length; a++) {
-//          console.log(c[a]);
-//        } 
-//     } else if (i == 'c') {
-//        let b = prompt('Enter the name of the new item')
-//        alert('Done');
-//        c.push(b);
-//        let i = prompt('Hi there, welcome to shop admin panel, what do you want (C,R,U,D)?');
-//        for(let a = 0; a < c.length; a++) {
-//           console.log(c[a]);
-//       } 
-//     } else if (i == 'u') {
-//        let x = prompt('Enter the position you want to update');
-//       let v = prompt('Enter the new name');
-//        c[x] = v; 
-//        alert('Done');
-//        let i = prompt('Hi there, welcome to shop admin panel, what do you want (C,R,U,D)?');
-//        for(let a = 0; a < c.length; a++) {
-//           console.log(c[a]);
-//         } 
-//     } else if (i == 'd') {
-//        let n = prompt('Enter the psition you want to delete');
-//        alert('Done');
-//        c.splice(Number(n), 1);
-//        n >=1;
-//        let i = prompt('Hi there, welcome to shop admin panel, what do you want (C,R,U,D)?');
-//        for(let a = 0; a < c.length; a++) {
-//           console.log(c[a]);
-//         } 
+    } else if (i == 'D') {
+        let f = prompt('Enter the poisition you want to delete');
+        a.splice(f-1, 1);
+        console.log(a);
 
-//    } 
+    } else if (i = 'E') {
+        alert ('khong hop le ');
+        break;
+    }
+}
 
    // 5
-   //  let b = prompt('nhap mot day so cach nhau boi ','');
-   //  let newArray = [b];
-   //  newArray = b.split(',');
-   //  let a = newArray[0];
-   //  for(let i = 0; i < newArray.length; i++) {
-   //     a = a + Number(newArray[i]);
-   //  }
-   //  alert(`The sum of them is ${a}`);
+    // let b = prompt('nhap mot day so cach nhau boi '(,)'');
+    // let newArray = [b];
+    // newArray = b.split(',');
+    // let a = newArray[0];
+    // for(let i = 0; i < newArray.length; i++) {
+    //    a = a + Number(newArray[i]);
+    // }
+    // alert(`The sum of them is ${a}`);
 
    // 6
     // let b = prompt('nhap mot day so cach nhau boi ','');
@@ -107,48 +104,48 @@
     // alert(`The smallest number is ${min}`);
  
    // 7
-   // let arr = [3, 4, 6, -9, 10, -88, 2];
-   // console.log(arr);
-   // let b = prompt('enter a number');
-   // let a = false;
-   // for(let i = 0; i < arr.length; i++) {
-   //    if(arr[i] == b) {
-   //       alert(`${b} is found in my array at index ${i}`);
-   //       a = true;
-   //       break;
-   //    }
-   // } if (!a) {
-   //    alert(`The number ${b} is not found in my array`);
-
+   //  let arr = [3, 4, 6, -9, 10, -88, 2];
+   //  console.log(arr);
+   //  let b = prompt('enter a number');
+   //  let a = false;
+   //  for(let i = 0; i < arr.length; i++) {
+   //     if(arr[i] == b) {
+   //        alert(`${b} is found in my array at index ${i}`);
+   //        a = true;
+   //        break;
+   //     }
+   //  } if (a == false) {
+   //     alert(`The number ${b} is not found in my array`);
+   //  }
    // Task 8
-    let flockSizes = [12, 30, 123, 24, 78, 89, 58];
-     console.log('This is my sheep sizes');
-     console.log(...flockSizes);
+    // let flockSizes = [12, 30, 123, 24, 78, 89, 58];
+    //  console.log('This is my sheep sizes');
+    //  console.log(...flockSizes);
 
-     let biggestSize = Math.max(...flockSizes); 
-     console.log(`\nNow my biggest sheep has size ${biggestSize}, let's shave it`);
+    //  let biggestSize = Math.max(...flockSizes); 
+    //  console.log(`\nNow my biggest sheep has size ${biggestSize}, let's shave it`);
 
-     let sheepIndex = flockSizes.indexOf(biggestSize);
-     flockSizes[sheepIndex] = 8; // return to default size after shearing: 8
-     console.log('\nAfter shearing, here is my flock');
-     console.log(...flockSizes);
+    //  let sheepIndex = flockSizes.indexOf(biggestSize);
+    //  flockSizes[sheepIndex] = 8; // return to default size after shearing: 8
+    //  console.log('\nAfter shearing, here is my flock');
+    //  console.log(...flockSizes);
 
-     let wantedMonths = 4;
-     for(let i = 0; i < wantedMonths; i++) {
-     console.log(`\nMONTH ${i+1}`);
-     console.log('One month has passed, my sheeps have grown, here are their sizes');
-     for(let i = 0; i < flockSizes.length; i++) {
-         flockSizes[i] = Number(flockSizes[i]) + 50;
-         }
-     console.log(...flockSizes);
-     }
+    //  let wantedMonths = 4;
+    //  for(let i = 0; i < wantedMonths; i++) {
+    //  console.log(`\nMONTH ${i+1}`);
+    //  console.log('One month has passed, my sheeps have grown, here are their sizes');
+    //  for(let i = 0; i < flockSizes.length; i++) {
+    //      flockSizes[i] = Number(flockSizes[i]) + 50;
+    //      }
+    //  console.log(...flockSizes);
+    //  }
 
-     let totalSize = 0, currentPrice = 2; // in $
-     for(let i = 0; i < flockSizes.length; i++) {
-         totalSize += flockSizes[i];
-     }
-     console.log(`\nMy flock has size in total: ${totalSize}`);
-     console.log(`I would get ${totalSize} * ${currentPrice}$ = ${totalSize*currentPrice}$`);
+    //  let totalSize = 0, currentPrice = 2; // in $
+    //  for(let i = 0; i < flockSizes.length; i++) {
+    //      totalSize += flockSizes[i];
+    //  }
+    //  console.log(`\nMy flock has size in total: ${totalSize}`);
+    //  console.log(`I would get ${totalSize} * ${currentPrice}$ = ${totalSize*currentPrice}$`);
 
 //     10
 //     let seqNames = prompt('Enter a sequence of names:');

@@ -87,17 +87,17 @@
 //     i++;
 // }
 
-// let n = prompt('Enter the total number of L and H');
-// let i = 1;
-// n = Number(n);
-// while (i<=n) {
-//         if (i>n/2) {
-//             console.log('H');
-//         } else {
-//             console.log('L');
-//         }
-//         i++;
-//     }
+ let n = prompt('Enter the total number of L and H');
+ let i = 1;
+ n = Number(n);
+ while (i<=n) {
+         if (i>n/2) {
+             console.log('H');
+         } else {
+             console.log('L');
+         }
+         i++;
+     }
 
 //   let a = 8;
 //   for (i=0; i<a; i++) {
