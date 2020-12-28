@@ -47,39 +47,39 @@
 // 4
 
    
-let a = ['jeans', 'T-shirt', 'socks'];
-let i;
-while(true) {
-     i = prompt('nhap vao ');
-     i = i.toUpperCase();
-    if(i == 'R') {
-        console.log('The current items are:');
-    for(let i = 0; i < a.length; i++) {
-        console.log(`${i}: ${a[i]}`);
-        alert('Done');
-    } 
-    } else if (i == 'C' ){
-        h = prompt('Enter the name of the new item');
-        a.push(h);
-         console.log(a);
-         alert('Done');
-    } else if (i == 'U') {
-        let s = prompt('enter the new name');
-        let g = prompt('enter ');
-        a[s] = g;
-        console.log(a);
-        alert('Done');
+// let a = ['jeans', 'T-shirt', 'socks'];
+// let i;
+// while(true) {
+//      i = prompt('nhap vao ');
+//      i = i.toUpperCase();
+//     if(i == 'R') {
+//         console.log('The current items are:');
+//     for(let i = 0; i < a.length; i++) {
+//         console.log(`${i}: ${a[i]}`);
+//         alert('Done');
+//     } 
+//     } else if (i == 'C' ){
+//         h = prompt('Enter the name of the new item');
+//         a.push(h);
+//          console.log(a);
+//          alert('Done');
+//     } else if (i == 'U') {
+//         let s = prompt('enter the new name');
+//         let g = prompt('enter ');
+//         a[s] = g;
+//         console.log(a);
+//         alert('Done');
 
-    } else if (i == 'D') {
-        let f = prompt('Enter the poisition you want to delete');
-        a.splice(f-1, 1);
-        console.log(a);
+//     } else if (i == 'D') {
+//         let f = prompt('Enter the poisition you want to delete');
+//         a.splice(f-1, 1);
+//         console.log(a);
 
-    } else if (i = 'E') {
-        alert ('khong hop le ');
-        break;
-    }
-}
+//     } else if (i = 'E') {
+//         alert ('khong hop le ');
+//         break;
+//     }
+// }
 
    // 5
     // let b = prompt('nhap mot day so cach nhau boi '(,)'');
@@ -165,17 +165,18 @@ while(true) {
 
 // {
 //     11
-//     let seqNumbers = prompt('Enter a sequence of names:');
-//     let Arr = seqNumbers.split(',');
-//     // // method 1 
-//     // let tempArr = [];
-//     // for(let i = 0; i < seqNumbers.length; i++) {
-//     //     let thisNumber = Number(Arr[i])
-//     //     if(thisNumber & 1) {
-//     //         tempArr.push(thisNumber);
-//     //     }
-//     // }
-//     // alert(tempArr);
+    // let seqNumbers = prompt('Enter a sequence of names:');
+    // let Arr = seqNumbers.split(',');
+    // // method 1 
+//     let tempArr = [];
+// console.log(tempArr);
+//     for(let i = 0; i < seqNumbers.length; i++) {
+//         let thisNumber = Number(Arr[i])
+//         if(thisNumber & 1) {
+//             tempArr.push(thisNumber);
+//         }
+//     }
+    // alert(tempArr);
 //     // method 2 using filter function
 //     let result = Arr.filter(x => Number(x) % 2 != 0);
 //     alert(result);
