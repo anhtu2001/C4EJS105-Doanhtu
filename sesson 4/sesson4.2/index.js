@@ -92,49 +92,50 @@
 
 //    5
 //a
-// let a = [
-//     {
-//     name : 'Xiaomi portable charger 20000mah',
-//     brand: 'xiaomi',
-//     price: '428',
-//     color: 'white',
-//     category: 'charger',
-// } ,
-//  {
-//     name : 'VSmart Active 1',
-//     brand: 'VSmart',
-//     price: '5487',
-//     color: 'black',
-//     category: 'phone',
-// },
-// {
-//     name : 'Iphone X',
-//     brand: 'Apple',
-//     price: '21490',
-//     color: 'gray',
-//     category: 'phone',
-// },
-// {
-//     name : 'Samsung Galaxy A9',
-//     brand: 'Samsung',
-//     price: '8490',
-//     color: 'Blue',
-//     category: 'phone',
-// },
-// ];
+let a = [
+    {
+    name : 'Xiaomi portable charger 20000mah',
+    brand: 'xiaomi',
+    price: '428',
+    color: 'white',
+    category: 'charger',
+} ,
+ {
+    name : 'VSmart Active 1',
+    brand: 'VSmart',
+    price: '5487',
+    color: 'black',
+    category: 'phone',
+},
+{
+    name : 'Iphone X',
+    brand: 'Apple',
+    price: '21490',
+    color: 'gray',
+    category: 'phone',
+},
+{
+    name : 'Samsung Galaxy A9',
+    brand: 'Samsung',
+    price: '8490',
+    color: 'Blue',
+    category: 'phone',
+},
+];
 
-// console.log(a);
-//    (cach 1) for (let b of  a) {
-//         console.log('----------------------');
-//         console.log('Name: ' + b.name);
-//         console.log('Price: ' + b.price);
-//     }
-// (cach 2) 
-// for (i = 0; i < a.length; i++) {
-//     console.log(`Name: ${a[i].name}`);
-//     console.log(`Price: ${a[i].price}`);
-//     console.log('-------------------');
-// }
+console.log(a);
+   //(cach 1)
+    for (let b of  a) {
+        console.log('----------------------');
+        console.log('Name: ' + b.name);
+        console.log('Price: ' + b.price);
+    }
+//(cach 2) 
+for (i = 0; i < a.length; i++) {
+    console.log(`Name: ${a[i].name}`);
+    console.log(`Price: ${a[i].price}`);
+    console.log('-------------------');
+}
 //     //b
     // console.log(a);
     // for (let b of  a) {
@@ -191,78 +192,78 @@
 //     }
     
     //6
-//     task = [];
-//     console.log('Hi there, this is your learning tasks to front-end developer carrer:');
-//     let html = {
-//         name: 'HTML',
-//         complete: false,
-//     };
-//     let css = {
-//         name: 'CSS',
-//         complete: false,
-//     };
-//     let nodejs = {
-//         name: 'Node Package Manager (npm)',
-//         complete: false,
-//     };
-//     let git = {
-//         name: 'Git',
-//         complete: false,
-//     };
-//     let js = {
-//         name: 'Basic of JavaScript',
-//         complete: false,
-//     }
-// task.push(html);
-// task.push(css);
-// task.push(js);
-// task.push(nodejs);
-// task.push(git);
-//a
-// console.log(task);
-//     // for (let b of  task) {
-//     //     console.log('----------------------');
-//     //     console.log( b.name);
-//     //     console.log('complete: ' + b.complete);
-//     // }
-// //b+c+d+e
-// a = prompt('Enter your command');
-// if (a == 'new') {
-//     let b = prompt('Enter new task');
-//      b = {
-//         new: b,
-//         complete: false,
-//     };
-//     task.push(b);
-//     for (i = 0; i < task.length; i++) {
-//         console.log(i + 1 + '.' + task[i].name);
-//         console.log('complete: ' + task[i].complete);
-// } 
-// } else if ( a == 'update') {
-//     let c = Number(prompt('Enter position:'));
-//     let d = prompt('Enter new title');
-//     task[c] = d;
+    task = [];
+    console.log('Hi there, this is your learning tasks to front-end developer carrer:');
+    let html = {
+        name: 'HTML',
+        complete: false,
+    };
+    let css = {
+        name: 'CSS',
+        complete: false,
+    };
+    let nodejs = {
+        name: 'Node Package Manager (npm)',
+        complete: false,
+    };
+    let git = {
+        name: 'Git',
+        complete: false,
+    };
+    let js = {
+        name: 'Basic of JavaScript',
+        complete: false,
+    }
+task.push(html);
+task.push(css);
+task.push(js);
+task.push(nodejs);
+task.push(git);
+a
+console.log(task);
+    // for (let b of  task) {
+    //     console.log('----------------------');
+    //     console.log( b.name);
+    //     console.log('complete: ' + b.complete);
+    // }
+//b+c+d+e
+a = prompt('Enter your command');
+if (a == 'new') {
+    let b = prompt('Enter new task');
+     b = {
+        name: b,
+        complete: false,
+    };
+    task.push(b);
+    for (i = 0; i < task.length; i++) {
+        console.log(i + 1 + '.' + task[i].name);
+        console.log('complete: ' + task[i].complete);
+} 
+} else if ( a == 'update') {
+    let c = Number(prompt('Enter position:'));
+    let d = prompt('Enter new title');
+    task[c] = d;
   
-//         for (i = 0; i < task.length; i++) {
-//         console.log(i + 1 + '.' + task[i].name);
-//         console.log('complete: ' + task[i].complete);
-//         } 
-//      } else if (a == 'complete') {
-//     let e = Number(prompt('Enter position:'));
-//     task[e].name = true;
-//     for(let i = 0; i < task.length ; i++) {
-//         console.log(i + 1 + '.' + task[i].name);
-//         console.log('complete: ' + task[i].complete);
-//     }
+        for (i = 0; i < task.length; i++) {
+        console.log(i + 1 + '.' + task[i].name);
+        console.log('complete: ' + task[i].complete);
+        } 
+     } else if (a == 'complete') {
+    let e = Number(prompt('Enter position:'));
+    task[e].name = true;
+    for(let i = 0; i < task.length ; i++) {
+        console.log(i + 1 + '.' + task[i].name);
+        console.log('complete: ' + task[i].complete);
+    }
 
-// } else if (a == 'delete') {
-//     let g = Number(prompt('Enter position:'));
-//     task.splice(g, 1);
-//     for(let i = 0; i < task.length ; i++) {
-//         console.log(i + 1 + '.' + task[i].name);
-//         console.log('complete: ' + task[i].complete);
-//     }
-// }
+} else if (a == 'delete') {
+    let g = Number(prompt('Enter position:'));
+    task.splice(g, 1);
+    for(let i = 0; i < task.length ; i++) {
+        console.log(i + 1 + '.' + task[i].name);
+        console.log('complete: ' + task[i].complete);
+    }
+}
 
 
 //g 
@@ -330,10 +331,27 @@
     //     },
     //     };
 
-    //     let newData = {};
+    // cach 1     let newData = {};
     //     for (let item in oldData) {
     //         if (item == 'firedRice' || item == 'pho') {
     //             newData[item] = oldData[item];
     //         }
     //     }
     //     console.log(newData);
+    // cach 2
+    // let {
+    //     pho,
+    //     ...newData
+    // } = oldData;
+    // console.log(newData);
+
+    //cach xoa 1 PHAN TU TRONG OBJECT :
+    //  let movie ={
+    //      name: 'batman',
+    //      year: 2010,
+    //  }
+    //  delete.movie.name (xoa name trong movie);
+    //  console.log(movie) 
+     //hien ra movie {
+        //  year: 2010,
+    //  }

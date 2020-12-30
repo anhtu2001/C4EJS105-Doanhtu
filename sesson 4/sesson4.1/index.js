@@ -14,7 +14,7 @@
 //     rate: 8.4,
 // };
 // for(let b in a) {
-//     console.log(`${a}: ${a[b]}`);
+//     console.log(`${b}: ${a[b]}`);
 // }
 //2
 // b,
@@ -65,8 +65,8 @@
 //               year: 2012,
 //               rate: 8.4,
 //      };
-//      let i = prompt('What you want to update?');
-//      let film = prompt('What is the update?');
+    //  let i = prompt('What you want to update?').toLocaleLowerCase();
+//      let film = Number(prompt('What is the update?'));
 //      a[i] = film;
 //      console.log('Done.New data:');
 //      console.log(a);
@@ -80,9 +80,12 @@
 //           };
           
 //              let i = prompt('What you want to know?');
-//           if(i == 'title' || i == 'year' || i == 'rate') {
-//                 alert(a[i]);
+          
         
+//           if (i == 'title' || i == 'year' || i == 'rate') {
+//             console.log('Done.New data:')
+//             console.log(a);
+            
 //         } else {
 //                  alert(`'${i}' does not exist our data`);
 //                  b = prompt ('enter the new data');
@@ -137,6 +140,7 @@
 //     item.rate = (item.rate + 0.7).toFixed(2); 
 //     console.log(item.rate);
 // }
+//cach 2: a[a.length - 1].rate = (a[a.length - 1].rate + 0.7).toFixed(2);
 //  6
 // let movie = {
 //     name:'Attack on titan',
@@ -191,4 +195,3 @@
 //     console.log('Cast: ' + movie[i].cast);
 // }
     
-
