@@ -44,43 +44,54 @@
 //         n = Math.round(Math.random() * 10);
 //     }
 //     b = questions[n];
-
-    // let arr = b.answer;  
-    // let current = arr.length, random, temp;
-    // while (current != 0) {
-    //     random = Math.floor(Math.random() * current);
-    //     current -= 1;
+//     //  xao tron
+//     let arr = b.answer;  
+//     let current = arr.length, random, temp;
+//     while (current != 0) {
+//         random = Math.floor(Math.random() * current);
+//         current -= 1;
         
-    //     temp = arr[current];
-    //     arr[current] = arr[random];
-    //     arr[random] = temp;
-    // }
+//         temp = arr[current];
+//         arr[current] = arr[random];
+//         arr[random] = temp;
+//     }
 
-
+// cach 1
 // let c = prompt(`${b.question}\n${b.answer[0]}\n${b.answer[1]}\n${b.answer[2]}\n${b.answer[3]}`);
 
 // if (c == null || c == undefined) {
 //     check = false;
 //     break;
-// }
-//     if (c == b.rightchoice) {
+// } else if (c == b.rightchoice) {
 //         point = point + 1;   
 //         questions.splice(n, 1);
 //         alert('good');
 //     } else {
 //         questions.splice(n, 1);
 //         alert('wrong');
-//     }
 // }
-
+// }
 // if (check == false) {
 //     alert('GoodBye!');
 // } else {
 //     alert('we are out of question');
 //     alert(`you answer ${point} out of ${a} questions`)
 // }
-// h
-
+//cach 2
+// let c = prompt(`${b.question}\n${b.answer[0]}\n${b.answer[1]}\n${b.answer[2]}\n${b.answer[3]}`);
+// if   (c == null || c == undefined) {
+//     alert('goodbye');
+//     break;
+// }else if (c == b.rightchoice) {
+//     point++;   
+//     alert('good');
+// } else {
+//     alert('wrong');
+// }
+// questions.splice(n, 1);
+// }
+// alert('we are out of question');
+// alert(`you answer ${point} out of ${a} questions`)
 
 // 2.1
 // a = ['to', 'be', 'that', 'of', 'elon', 'to', 'now', 'back', 'cool', 'hey', 'love', 'of', 'life', 'that', 'rain', 'summer', 'color', 'now', 'of', 'hat', 'late', 'sorry', 'my', 'team'];
@@ -167,5 +178,4 @@
 // };
 // d = d* 1000;
 // alert(`there are ${b.length} generation of '${a.toUpperCase()}' in inventory :\n\n${c} \nWith total value: ${d.toLocaleString('vi', { style: 'currency', currency: 'VND'})}`);
-
 

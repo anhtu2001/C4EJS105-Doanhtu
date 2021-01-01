@@ -219,7 +219,7 @@ task.push(css);
 task.push(js);
 task.push(nodejs);
 task.push(git);
-a
+// a
 console.log(task);
     // for (let b of  task) {
     //     console.log('----------------------');
@@ -242,7 +242,7 @@ if (a == 'new') {
 } else if ( a == 'update') {
     let c = Number(prompt('Enter position:'));
     let d = prompt('Enter new title');
-    task[c] = d;
+    task[c].name = d;
   
         for (i = 0; i < task.length; i++) {
         console.log(i + 1 + '.' + task[i].name);
