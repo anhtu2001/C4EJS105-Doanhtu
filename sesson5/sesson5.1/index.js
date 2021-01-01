@@ -44,17 +44,6 @@
 //         n = Math.round(Math.random() * 10);
 //     }
 //     b = questions[n];
-//     //  xao tron
-//     let arr = b.answer;  
-//     let current = arr.length, random, temp;
-//     while (current != 0) {
-//         random = Math.floor(Math.random() * current);
-//         current -= 1;
-        
-//         temp = arr[current];
-//         arr[current] = arr[random];
-//         arr[random] = temp;
-//     }
 
 // cach 1
 // let c = prompt(`${b.question}\n${b.answer[0]}\n${b.answer[1]}\n${b.answer[2]}\n${b.answer[3]}`);
@@ -108,50 +97,50 @@
 // console.log(b);
 
 // // 2.2
-// const inventory = [
-//     {
-//         name: 'HP Envy 13aq',
-//         price: 21000,
-//         brand: 'HP',
-//         quantity: 5,
-//     },
-//     {
-//         name: 'Dell XPS 9370',
-//         price: 30000,
-//         brand: 'Dell',
-//         quantity: 1,
-//     },
-//     {
-//         name: 'Dell Inspiron 3567',
-//         price: 9300,
-//         brand: 'Dell',
-//         quantity: 12,
-//     },
-//     {
-//         name: 'Dell Latitude E5450',
-//         price: 8600,
-//         brand: 'Dell',
-//         quantity: 2,
-//     },
-//     {
-//         name: 'Asus Zenbook',
-//         brand:'Asus',
-//         price: 20000,
-//         quantity: 4,
-//     },
-//     {
-//         name: 'HP Pavilion',
-//         brand: 'HP',
-//         price: 14000,
-//         quantity: 7,
-//     },
-// ];
+const inventory = [
+    {
+        name: 'HP Envy 13aq',
+        price: 21000,
+        brand: 'HP',
+        quantity: 5,
+    },
+    {
+        name: 'Dell XPS 9370',
+        price: 30000,
+        brand: 'Dell',
+        quantity: 1,
+    },
+    {
+        name: 'Dell Inspiron 3567',
+        price: 9300,
+        brand: 'Dell',
+        quantity: 12,
+    },
+    {
+        name: 'Dell Latitude E5450',
+        price: 8600,
+        brand: 'Dell',
+        quantity: 2,
+    },
+    {
+        name: 'Asus Zenbook',
+        brand:'Asus',
+        price: 20000,
+        quantity: 4,
+    },
+    {
+        name: 'HP Pavilion',
+        brand: 'HP',
+        price: 14000,
+        quantity: 7,
+    },
+];
 
 // // // 2.3
+//cach 1
 // let dell = [];
 // let hp = [];
 // let asus = [];
-// let inventoryBybrand = {};
 // for(let i = 0; i < inventory.length; i++) {
 //     if(inventory[i].brand == 'Dell') {
 //         dell.push(inventory[i]);
@@ -165,6 +154,18 @@
 // inventoryBybrand.hp = hp;
 // inventoryBybrand.dell = dell;
 // console.log(inventoryBybrand);
+//cach2
+// let inventoryBybrand ={};
+// for(let i of inventory) {
+//    if(inventoryBybrand[i.brand]){
+//         inventoryBybrand[i.brand].push(i);
+// } else {
+//     inventoryBybrand[i.brand] = [];
+//     inventoryBybrand[i.brand].push(i);
+// }
+// } 
+// console.log(inventoryBybrand);
+
 
 // let a = prompt('which brand');
 // let b = inventoryBybrand[a.toLocaleLowerCase()];
