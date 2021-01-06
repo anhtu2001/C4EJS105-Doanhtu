@@ -1,0 +1,56 @@
+body{
+    background-color: aqua;
+}
+#bộphim{
+    font-size: 30px;
+    background-color: red;
+    text-align: center;
+}
+#phim{
+    width: 1230px;
+    border: 1px solid #333;
+    padding: 10px;
+    overflow: auto;
+}
+
+.bophim1 {
+    width:50%;
+    height: 150px;
+    background: #e8e8e8;
+    float:left
+  }
+.bophim2 {
+    width: 50% ;
+    height: 150px;
+    background: #e8e8e8;
+    float: right;
+}
+#phimbb{
+    width: 1230px;
+    border: 1px solid #333;
+    padding: 0px;
+    overflow: auto;
+}
+.bophim3 {
+    width:50%;
+    height: 150px;
+    background: #e8e8e8;
+    float:left
+}
+.bophim4 {
+    width:50%;
+    height: 150px;
+    background: #e8e8e8;
+    float:right
+}
+
+
+#phim {
+    font-size: 20px;
+    color:green
+}
+
+#phimbb{
+    font-size: 20px;
+    color:blue
+}

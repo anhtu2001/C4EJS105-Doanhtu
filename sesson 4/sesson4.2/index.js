@@ -220,7 +220,7 @@ task.push(js);
 task.push(nodejs);
 task.push(git);
 // a
-console.log(task);
+// console.log(task);
     // for (let b of  task) {
     //     console.log('----------------------');
     //     console.log( b.name);
@@ -230,9 +230,10 @@ console.log(task);
 a = prompt('Enter your command');
 if (a == 'new') {
     let b = prompt('Enter new task');
+    let z = prompt('nhap complete');
      b = {
         name: b,
-        complete: false,
+        complete: z,
     };
     task.push(b);
     for (i = 0; i < task.length; i++) {
@@ -242,7 +243,9 @@ if (a == 'new') {
 } else if ( a == 'update') {
     let c = Number(prompt('Enter position:'));
     let d = prompt('Enter new title');
+    let v = prompt('nhap complete')
     task[c].name = d;
+    task[c].complete = v;
   
         for (i = 0; i < task.length; i++) {
         console.log(i + 1 + '.' + task[i].name);
@@ -250,7 +253,7 @@ if (a == 'new') {
         } 
      } else if (a == 'complete') {
     let e = Number(prompt('Enter position:'));
-    task[e].name = true;
+    task[e.name] = true;
     for(let i = 0; i < task.length ; i++) {
         console.log(i + 1 + '.' + task[i].name);
         console.log('complete: ' + task[i].complete);
@@ -263,7 +266,7 @@ if (a == 'new') {
         console.log(i + 1 + '.' + task[i].name);
         console.log('complete: ' + task[i].complete);
     }
-}
+} 
 
 
 //g 

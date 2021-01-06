@@ -8,43 +8,42 @@
 // let x = arr[Math.round(Math.random() * arr.length)]
 // console.log(x);
 //c+d + e
-// let questions = [
-//     {
-//         question: 'nhen co may chan?',
-//         answer: ['1','4', '8', '12' ],
-//         rightchoice: 8,
-//         },
+let questions = [
+    {
+        question: 'nhen co may chan?',
+        answer: ['1','4', '8', '12' ],
+        rightchoice: 8,
+        },
        
 
-//     {
-//         question: 'day la cai gi?',
-//         answer: ['but', 'ao', 'quan', 'dep'],
-//         rightchoice: 'ao',
+    {
+        question: 'day la cai gi?',
+        answer: ['but', 'ao', 'quan', 'dep'],
+        rightchoice: 'ao',
            
-//     },
-//     {
-//         question: 'ten cua ban la gi?',
-//         answer: ['tu', 'thanh', 'thuong', 'nam'],
-//         rightchoice: 'tu',
-//     },
-//     {
-//         question: 'ban o nuoc nao?',
-//         answer: ['phap', 'my', 'vietnam', 'uc'],
-//         rightchoice: 'vietnam',
-//     },
-// ];
-// let n = Math.random();
-// n = Math.round(n * 10);
-// let a = questions.length;
-// let b ;
-// let check;
-// let point = 0;
-// for (let i = 0; i < a; i++) {
-//     while(n >= questions.length) {
-//         n = Math.round(Math.random() * 10);
-//     }
-//     b = questions[n];
-
+    },
+    {
+        question: 'ten cua ban la gi?',
+        answer: ['tu', 'thanh', 'thuong', 'nam'],
+        rightchoice: 'tu',
+    },
+    {
+        question: 'ban o nuoc nao?',
+        answer: ['phap', 'my', 'vietnam', 'uc'],
+        rightchoice: 'vietnam',
+    },
+];
+n = Math.round(Math.random() * 4);
+let a = questions.length;
+let b ;
+let check;
+let point = 0;
+for (let i = 0; i < a; i++) {
+    while(n >= questions.length) {
+        n = Math.round(Math.random() * 4);
+    }
+    b = questions[n];
+}
 // cach 1
 // let c = prompt(`${b.question}\n${b.answer[0]}\n${b.answer[1]}\n${b.answer[2]}\n${b.answer[3]}`);
 
@@ -136,35 +135,35 @@ const inventory = [
     },
 ];
 
-// // // 2.3
-//cach 1
-// let dell = [];
-// let hp = [];
-// let asus = [];
-// for(let i = 0; i < inventory.length; i++) {
-//     if(inventory[i].brand == 'Dell') {
-//         dell.push(inventory[i]);
-//     } else if (inventory[i].brand == 'HP') {
-//         hp.push(inventory[i]);
-//     } else if (inventory[i].brand == 'Asus') {
-//         asus.push(inventory[i]);
-//     } 
-// }
-// inventoryBybrand.asus = asus;
-// inventoryBybrand.hp = hp;
-// inventoryBybrand.dell = dell;
-// console.log(inventoryBybrand);
-//cach2
-// let inventoryBybrand ={};
-// for(let i of inventory) {
-//    if(inventoryBybrand[i.brand]){
-//         inventoryBybrand[i.brand].push(i);
-// } else {
-//     inventoryBybrand[i.brand] = [];
-//     inventoryBybrand[i.brand].push(i);
-// }
-// } 
-// console.log(inventoryBybrand);
+// // 2.3
+// cach 1
+let dell = [];
+let hp = [];
+let asus = [];
+for(let i = 0; i < inventory.length; i++) {
+    if(inventory[i].brand == 'Dell') {
+        dell.push(inventory[i]);
+    } else if (inventory[i].brand == 'HP') {
+        hp.push(inventory[i]);
+    } else if (inventory[i].brand == 'Asus') {
+        asus.push(inventory[i]);
+    } 
+}
+inventoryBybrand.asus = asus;
+inventoryBybrand.hp = hp;
+inventoryBybrand.dell = dell;
+console.log(inventoryBybrand);
+cach2
+let inventoryBybrand ={};
+for(let i of inventory) {
+   if(inventoryBybrand[i.brand]){
+        inventoryBybrand[i.brand].push(i);
+} else {
+    inventoryBybrand[i.brand] = [];
+    inventoryBybrand[i.brand].push(i);
+}
+} 
+console.log(inventoryBybrand);
 
 
 // let a = prompt('which brand');
