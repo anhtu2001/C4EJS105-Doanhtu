@@ -16,13 +16,13 @@ body{
 .bophim1 {
     width:50%;
     height: 150px;
-    background: #e8e8e8;
+    background:black;
     float:left
   }
 .bophim2 {
     width: 50% ;
     height: 150px;
-    background: #e8e8e8;
+    background:black;
     float: right;
 }
 #phimbb{
@@ -34,23 +34,36 @@ body{
 .bophim3 {
     width:50%;
     height: 150px;
-    background: #e8e8e8;
+    background:black;
     float:left
 }
 .bophim4 {
     width:50%;
     height: 150px;
-    background: #e8e8e8;
+    background:black;
     float:right
 }
 
 
 #phim {
     font-size: 20px;
-    color:green
+    color:green;
+    background:black
 }
 
 #phimbb{
     font-size: 20px;
     color:blue
+}
+.bophim1 img{
+    width:70%
+}
+.bophim2 img{
+    width:70% ;
+}
+.bophim3 img{
+    width:70%
+}
+.bophim4 img{
+    width:70%
 }
