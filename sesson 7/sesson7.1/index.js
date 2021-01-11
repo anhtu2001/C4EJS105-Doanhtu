@@ -132,16 +132,17 @@
 //     a.push(item[i].innerHTML);
 // }
 // console.log(a)
-//12.2 +12.3
+// //12.2 +12.3
 // item_list=document.getElementById('item_list')
 // console.log(item_list)
-// 12.4
+// // 12.4
 // for (let i = 0; i < a.length; i++) {
 //     item_list.insertAdjacentHTML('afterbegin', `<li>${a[i]}</li>`);
 //   }
 //   console.log(item_list)
-  //   12.5 +12.6
-//   let newitem = document.getElementById('Newitem');
+  
+  
+  //   let newitem = document.getElementById('Newitem');
 //   let add = document.getElementById('add');
 //   console.log(newitem);
 //   console.log(add);
@@ -330,7 +331,7 @@
 //           console.log('Item:' + i)
 //         });
 //       }
-//12.15
+//12.15  bài này em tham khảokhảo
 // a = [];
 // let item = document.getElementsByTagName('td');
 // for(let i = 0; i < item.length; i++) {
@@ -371,44 +372,44 @@
 // }
 
 //12.16
-// let items = ['Backpack', 'MiBand watch', 'Ring'];
+let items = ['Backpack', 'MiBand watch', 'Ring'];
 
-//     console.log(items);
+    console.log(items);
 
-//     const list = document.getElementById('item_list');
+    const list = document.getElementById('itemlist');
 
    
-//     function update_list() {
-//       list.innerHTML = '';
-//       for (let i = 0; i < items.length; i++) {
-//         list.insertAdjacentHTML("beforeend", `<li><span>${items[i]} </span><button class="remove_btns">Remove</button></li>`);
-//       };
+    function update_list() {
+      list.innerHTML = '';
+      for (let i = 0; i < items.length; i++) {
+        list.insertAdjacentHTML("beforeend", `<li><span>${items[i]} </span><button class="remove_btns">Remove</button></li>`);
+      };
 
      
-//       const remove_btns = document.getElementsByClassName('remove_btns');
-//       for (let i = 0; i < remove_btns.length; i++) {
-//         remove_btns[i].addEventListener('click', () => {
-//           items.splice(i, 1);
-//           console.log(items);
-//           update_list();
-//         });
-//       };
-//     }
+      const remove_btns = document.getElementsByClassName('remove_btns');
+      for (let i = 0; i < remove_btns.length; i++) {
+        remove_btns[i].addEventListener('click', () => {
+          items.splice(i, 1);
+          console.log(items);
+          update_list();
+        });
+      };
+    }
 
-//     update_list();
+    update_list();
    
-//     const add = document.getElementById('add');
-//     const Newitem = document.getElementById('Newitem');
+    const add = document.getElementById('add');
+    const Newitem = document.getElementById('Newitem');
 
-//     add.addEventListener('click', () => {
-//       let new_item = Newitem.value;
+    add.addEventListener('click', () => {
+      let new_item = Newitem.value;
 
-//       if (new_item == '') {
-//         alert('pls dont leave it blank');
-//       } else {
-//         items.push(new_item);
-//         update_list();
-//         Newitem.value = '';
-//         console.log(items);
-//       };
-//     });
+      if (new_item == '') {
+        alert('no item');
+      } else {
+        items.push(new_item);
+        update_list();
+        Newitem.value = '';
+        console.log(items);
+      };
+    });
