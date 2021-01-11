@@ -148,7 +148,7 @@ console.log(a)
 //   }
 //   console.log(b);
   
-  
+  //12.5 + 12.6
 //   let newitem = document.getElementById('Newitem');
 //   let add = document.getElementById('add');
 //   console.log(newitem);
