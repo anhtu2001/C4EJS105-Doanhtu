@@ -126,12 +126,12 @@
 
 //12
 // //12.1
-// a = [];
-// let item = document.getElementsByTagName('td');
-// for(let i = 0; i < item.length; i++) {
-//     a.push(item[i].innerHTML);
-// }
-// console.log(a)
+a = [];
+let item = document.getElementsByTagName('td');
+for(let i = 0; i < item.length; i++) {
+    a.push(item[i].innerHTML);
+}
+console.log(a)
 // //12.2 +12.3
 // item_list=document.getElementById('item_list')
 // console.log(item_list)
@@ -139,10 +139,17 @@
 // for (let i = 0; i < a.length; i++) {
 //     item_list.insertAdjacentHTML('afterbegin', `<li>${a[i]}</li>`);
 //   }
+//   // console.log(item_list)
+//   document.getElementById('a').remove()
 //   console.log(item_list)
+//   let b = document.getElementById('b')
+//   for (let i = 0; i < a.length; i++) {
+//     b.insertAdjacentHTML('afterbegin', `<li>${a[i]}</li>`);
+//   }
+//   console.log(b);
   
   
-  //   let newitem = document.getElementById('Newitem');
+//   let newitem = document.getElementById('Newitem');
 //   let add = document.getElementById('add');
 //   console.log(newitem);
 //   console.log(add);
