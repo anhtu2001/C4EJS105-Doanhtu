@@ -126,12 +126,12 @@
 
 //12
 // //12.1
-a = [];
-let item = document.getElementsByTagName('td');
-for(let i = 0; i < item.length; i++) {
-    a.push(item[i].innerHTML);
-}
-console.log(a)
+// a = [];
+// let item = document.getElementsByTagName('td');
+// for(let i = 0; i < item.length; i++) {
+//     a.push(item[i].innerHTML);
+// }
+// console.log(a)
 // //12.2 +12.3
 // item_list=document.getElementById('item_list')
 // console.log(item_list)
@@ -175,13 +175,13 @@ console.log(a)
 //     console.log('h')
 // })
    //12.9
-  //  a = [];
-// let item = document.getElementsByTagName('td');
-// for(let i = 0; i < item.length; i++) {
-//     a.push(item[i].innerHTML);
-// }
-// console.log(a)
-// Newitem=document.getElementById('Newitem')
+//    a = [];
+//    let item = document.getElementsByTagName('td');
+//    for(let i = 0; i < item.length; i++) {
+//        a.push(item[i].innerHTML);
+//    }
+//    console.log(a)
+// Newitem = document.getElementById('Newitem')
 //    add.addEventListener('click',() => {
 //     console.log('Add button clicked')
 // let newValue= Newitem.value
@@ -338,7 +338,7 @@ console.log(a)
 //           console.log('Item:' + i)
 //         });
 //       }
-//12.15  bài này em tham khảokhảo
+//12.15  
 // a = [];
 // let item = document.getElementsByTagName('td');
 // for(let i = 0; i < item.length; i++) {
@@ -378,16 +378,19 @@ console.log(a)
 //   });
 // }
 
-//12.16
-let items = ['Backpack', 'MiBand watch', 'Ring'];
-
-    console.log(items);
+//12.16 bài này em tham khảo
+items = [];
+let item = document.getElementsByTagName('td');
+for(let i = 0; i < item.length; i++) {
+    items.push(item[i].innerHTML);
+}
+console.log(items)
 
     const list = document.getElementById('itemlist');
 
    
     function update_list() {
-      list.innerHTML = '';
+      list.innerHTML = ''; //itemlist là in ra màn hình nên nếu không thực hiện lệnh này thì sẽ bị lỗi in ra ví dụ: xóa từ dưới lên trên thì đúng nhưng xóa từ trên xuống dưới thì bị lỗi ngay
       for (let i = 0; i < items.length; i++) {
         list.insertAdjacentHTML("beforeend", `<li><span>${items[i]} </span><button class="remove_btns">Remove</button></li>`);
       };
@@ -398,12 +401,12 @@ let items = ['Backpack', 'MiBand watch', 'Ring'];
         remove_btns[i].addEventListener('click', () => {
           items.splice(i, 1);
           console.log(items);
-          update_list();
+          update_list();// update lại trạng thái mới  
         });
       };
     }
 
-    update_list();
+    update_list();//để cho các phần tử trong array in ra dưới dạng <ul><li> trên html 
    
     const add = document.getElementById('add');
     const Newitem = document.getElementById('Newitem');
@@ -420,3 +423,4 @@ let items = ['Backpack', 'MiBand watch', 'Ring'];
         console.log(items);
       };
     });
+
