@@ -60,86 +60,86 @@
 // reload.addEventListener('click', show_quote)
 
 //bai 4
-// Newproject = document.getElementById('new_project');
-// Newtask = document.getElementById('new_task');
-// Newtime = document.getElementById('new_time');
-// add = document.getElementById('add_btn');
-// clear = document.getElementById('clear_btn');
-// body = document.getElementById('body');
-// let timeSheetData = [{
-//     project: 'Learn front-end',
-//     task: 'Learn HTML',
-//     time_spent: '6'
-// }, {
-//     project: 'Learn front-end',
-//     task: 'Learn CSS',
-//     time_spent: '8'
-// }, {
-//     project: 'Learn front-end',
-//     task: 'Learn JS Variables and Data types',
-//     time_spent: '6'
-// }, {
-//     project: 'Learn git',
-//     task: 'Learn git basics',
-//     time_spent: '2'
-// }];
-// let update1 = 0;
-// let update2;
-// function update3() {
-//     body.innerHTML = '';
+Newproject = document.getElementById('new_project');
+Newtask = document.getElementById('new_task');
+Newtime = document.getElementById('new_time');
+add = document.getElementById('add_btn');
+clear = document.getElementById('clear_btn');
+body = document.getElementById('body');
+let timeSheetData = [{
+    project: 'Learn front-end',
+    task: 'Learn HTML',
+    time_spent: '6'
+}, {
+    project: 'Learn front-end',
+    task: 'Learn CSS',
+    time_spent: '8'
+}, {
+    project: 'Learn front-end',
+    task: 'Learn JS Variables and Data types',
+    time_spent: '6'
+}, {
+    project: 'Learn git',
+    task: 'Learn git basics',
+    time_spent: '2'
+}];
+let update1 = 0;
+let update2;
+function update3() {
+    body.innerHTML = '';
 
-// for(let data of timeSheetData) {
-//     body.insertAdjacentHTML('beforeend', `<tr><td>${data.project}</td><td>${data.task}</td><td>${data.time_spent}</td><td><button class = "delete">X</button><button class = "update">U</button></td><tr>`);
-// };
-// remove1 = document.getElementsByClassName('delete');
-// update4 = document.getElementsByClassName('update');
-// for(let i = 0; i < remove1.length; i++) {
-//     remove1[i].addEventListener('click', () => {
-//         timeSheetData.splice(i, 1);
-//         update3();
-//     })
-// }
-//     for(let i = 0; i < update4.length; i++) {
-//         update4[i].addEventListener('click', () => {
-//              update1 = i;
-//              update2 = false;
-//             Newproject.value = timeSheetData[i].project;
-//             Newtask.value = timeSheetData[i].task;
-//             Newtime.value = timeSheetData[i].time_spent;
+for(let data of timeSheetData) {
+    body.insertAdjacentHTML('beforeend', `<tr><td>${data.project}</td><td>${data.task}</td><td>${data.time_spent}</td><td><button class = "delete">X</button><button class = "update">U</button></td><tr>`);
+};
+remove1 = document.getElementsByClassName('delete');
+update4 = document.getElementsByClassName('update');
+for(let i = 0; i < remove1.length; i++) {
+    remove1[i].addEventListener('click', () => {
+        timeSheetData.splice(i, 1);
+        update3();
+    })
+}
+    for(let i = 0; i < update4.length; i++) {
+        update4[i].addEventListener('click', () => {
+             update1 = i;
+             update2 = false;
+            Newproject.value = timeSheetData[i].project;
+            Newtask.value = timeSheetData[i].task;
+            Newtime.value = timeSheetData[i].time_spent;
 
-//         });
-//     };
-// }
+        });
+    };
+}
 
 
-// update3();
-// console.log(update2);
-// add.addEventListener('click', () => {
-//     if(Newproject.value == '' || Newtime.value == '' || Newtask.value == '') {
-//         alert('vui long nhap day du');
+update3();
+console.log(update2);
+add.addEventListener('click', () => {
+    if(Newproject.value == '' || Newtime.value == '' || Newtask.value == '') {
+        alert('vui long nhap day du');
    
-//    } else if (update2 == false){
-//        timeSheetData[update1] = {project: Newproject.value, task: Newtask.value, time_spent: Newtime.value};
-//        console.log(timeSheetData);
-//        update3();
-//        Newproject.value = '';
-//        Newtask.value = '';
-//        Newtime.value = '';
-//    } else {
-//     timeSheetData.push({project: Newproject.value, task: Newtask.value, time_spent: Newtime.value});
-//     console.log(timeSheetData);
-//     update3();
-//     Newproject.value = '';
-//     Newtask.value = '';
-//     Newtime.value = '';
-//    };
-// }
-//        );
-//        clear.addEventListener('click', () => {
-//            Newtime.value = '';
-//            Newproject.value = '';
-//            Newtask.value = '';
-//        })
+   } else if (update2 == false){
+       timeSheetData[update1] = {project: Newproject.value, task: Newtask.value, time_spent: Newtime.value};
+       console.log(timeSheetData);
+       update3();
+       Newproject.value = '';
+       Newtask.value = '';
+       Newtime.value = '';
+   } else {
+    timeSheetData.push({project: Newproject.value, task: Newtask.value, time_spent: Newtime.value});
+    console.log(timeSheetData);
+    update3();
+    Newproject.value = '';
+    Newtask.value = '';
+    Newtime.value = '';
+   };
+}
+       );
+       clear.addEventListener('click', () => {
+           Newtime.value = '';
+           Newproject.value = '';
+           Newtask.value = '';
+       })
     
 //bai 5
 
