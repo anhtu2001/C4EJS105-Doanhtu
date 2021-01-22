@@ -1,1 +1,0 @@
-https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzvW75sa7iyRJWY0s8sLFRMPJkn5Rbv6UAxw&usqp=CAU

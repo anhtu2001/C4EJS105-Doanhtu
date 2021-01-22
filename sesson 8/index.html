@@ -31,27 +31,92 @@
     <div id="author"></div> -->
 
 <!-- bai 4 -->
-<div>
+<!-- <div>
 <input type ="text" placeholder="Enter project" id = 'new_project'>
 <input type="text" placeholder="Enter task" id="new_task">
         <input type="number" placeholder="Time spent" id="new_time">
         <button id="add_btn">Add</button>
         <button id="clear_btn">Clear</button>
         <table id="table">
-            <b>
-              <tr>
+              <tr>                
                 <td>Project</td>
                 <td>Task</td>
                 <td>Time Spent</td>
                 <td>Actions</td>
               </tr>
-              </b>
             <tbody id="body"></tbody>
         </table>
     </div>
-    
+     -->
     <!-- bai5 -->
-  
+        <div class="content">
+            <!-- Start button-->
+            <div id="start_content">
+                <button id="start_button"><i class="fas fa-play"></i></button>
+                <p>Start!</p>
+            </div>
+            <!--Setting-->
+            <div id="game_setting">
+                <div class="setting_title"><i class="fas fa-cog"></i> Setting</div>
+                <div id="setting_items">
+                    <div id="game_UI">
+                        <span class="check_box_container">
+                            <input type="checkbox" id="score_box" onclick="scorebox()"> 
+                            <span class="checkmark"></span>
+                            <span>Score</span>
+                        </span>
+                        <span class="check_box_container">
+                            <input type="checkbox" id="timer_box" onclick="timerbox()">
+                            <span class="checkmark"></span>
+                            <span>Timer</span>
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="setting_title"><i class="fab fa-accessible-icon"></i>Difficult</div>    
+                    <div id="difficulties">
+                        <span class="check_box_container">
+                            <input type="checkbox" id="easy_box" checked="checked" onclick="easybox()">
+                            <span class="checkmark"></span> 
+                            <span>Easy</span>
+                        </span>
+                        <span class="check_box_container">
+                            <input type="checkbox" id="hard_box" onclick="hardbox()">
+                            <span class="checkmark"></span>
+                            <span>Hard</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- Play content-->
+            <div id="play_content">
+                <div id="full_progress_bar">
+                    <div id="progress_bar"></div>
+                </div>
+                <div class="game_score">
+                    <span id="score">0</span>
+                </div>
+                <div class="expression">
+                    <span id="first_number">5</span> +
+                    <span id="second_number">10</span> = 
+                    <span id="random_sum">20</span>
+                </div>
+                <div class="ans_button">
+                    <button id="wrong">✖</button>
+                    <button id="right">✔</button>
+                </div>
+                <div id="pause_btn"><i class="far fa-pause-circle"></i></div>
+            </div>
+            <div id="endgame">
+                <p id="endgame_text">End game!</p>
+                <p>High score: <span id="high_score"></span></p>
+                <a href="index.html">Click here</a> to play again!
+            </div>
+        </div>
+        <script src="index.js"></script>
+        
+    </body>
+    
+    </html>
 <script src="data.js"></script>
 <script src="index.js"></script>
 </body>
