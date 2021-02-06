@@ -1,0 +1,94 @@
+/* Reset Css */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing:border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+
+}
+
+#header{
+    height: 46px;
+    background-color: black;
+
+}
+
+#header #nav > li > a {
+    color: white;
+    text-transform: uppercase;
+}
+
+#header #nav li {
+    display: inline-block;
+    position: relative;
+    /* list-style: none; */
+}
+
+#header #nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    min-width: 130px;
+    display: block;
+    text-align: center;
+}
+
+/*Mình thêm chức năng hover*/
+#header #nav > li:hover .subnav {
+    display: block;
+}
+
+#header #nav .subnav{
+    display: none;/* -- Chỗ này bạn nên thêm dislay: none*/ 
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    min-width: 160px; /*Thêm min-width*/
+    
+   
+}
+
+
+#header #nav .subnav li{
+    width: 100%;
+}
+
+
+#header #nav .subnav a{
+    /* display: none; -- Chỗ này bạn nên bỏ dislay: none và để nó ở trên .subnav*/ 
+    color: black;
+    line-height: 50px;
+}
+
+#header #nav .subnav li:hover a,
+#header #nav>li:hover>a{
+    background-color: #cccccc;
+    color: black;
+}
+/* phan search */
+
+#header #nav {
+    display: inline-block;
+}
+#header .search{
+    float:right;
+    padding: 0 21px;
+    line-height: 46px;
+    font-size: 30px;
+    color: white;
+}
+.search:hover{
+    background-color: red;
+}
+/* phan bam dinh */
+#header{
+    position:fixed;
+    top:0;
+    left: 0;
+    right: 0;
+}
